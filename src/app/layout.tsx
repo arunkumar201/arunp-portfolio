@@ -1,12 +1,14 @@
 import "./globals.css";
-import type { Metadata } from "next";
+
 import { Inter } from "next/font/google";
+import type { Metadata } from "next";
+import MyNavbar from "@/components/Navbar";
 import { ThemeProvider } from "@/context/ThemeProvider";
 
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-	title: "arunp-portfolio",
+	title: `${process.env.PORTFOLIO_NAME|| ""} Portfolio`,
 	description:
 		"Craft a personalized portfolio website to showcase your skills, experiences, and projects. Share your appreciation by bestowing it with ⭐️.",
 };
@@ -24,7 +26,12 @@ export default function RootLayout({
 				enableSystem
 				disableTransitionOnChange
 			>
-				<body className={inter.className}>{children}</body>
+				<body className={inter.className}>
+					<main className="lg:container w-full bg-popover-foreground dark:bg-[#020617] min-h-screen min-w-full ">
+						<MyNavbar />
+						{children}
+					</main>
+				</body>
 			</ThemeProvider>
 		</html>
 	);
