@@ -26,7 +26,6 @@ const MyNavbar = () => {
 				className="text-base md:text-lg bg-primary-foreground/60 dark:bg-secondary/60 fixed md:mt-3 container md:rounded-xl"
 				onMenuOpenChange={setIsMenuOpen}
 				position="sticky"
-				onScroll={blur}
 			>
 				<NavbarContent justify="start">
 					<NavbarMenuToggle
