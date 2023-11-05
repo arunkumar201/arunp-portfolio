@@ -1,5 +1,6 @@
 import "./globals.css";
 
+import Footer from "@/components/Footer";
 import { Inter } from "next/font/google";
 import type { Metadata } from "next";
 import MyNavbar from "@/components/Navbar";
@@ -30,6 +31,7 @@ export default function RootLayout({
 					<main className="lg:container w-full bg-popover-foreground dark:bg-[#020617] min-h-screen min-w-full ">
 						<MyNavbar />
 						{children}
+						<Footer/>
 					</main>
 				</body>
 			</ThemeProvider>

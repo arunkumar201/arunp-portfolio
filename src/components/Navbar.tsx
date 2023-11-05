@@ -9,11 +9,9 @@ import {
 	NavbarContent,
 	NavbarItem,
 	NavbarMenu,
-	NavbarMenuItem,
 	NavbarMenuToggle,
 } from "@nextui-org/react";
 
-import { Button } from "./ui/button";
 import GithubLogo from "../../public/github-logo.svg";
 import Image from "next/image";
 import MenuList from "./MenuList";
@@ -25,9 +23,10 @@ const MyNavbar = () => {
 	return (
 		<>
 			<Navbar
-				shouldHideOnScroll
-				className="text-base md:text-lg bg-primary-foreground dark:bg-secondary md:mt-3 absolute container md:rounded-xl"
+				className="text-base md:text-lg bg-primary-foreground/60 dark:bg-secondary/60 fixed md:mt-3 container md:rounded-xl"
 				onMenuOpenChange={setIsMenuOpen}
+				position="sticky"
+				onScroll={blur}
 			>
 				<NavbarContent justify="start">
 					<NavbarMenuToggle
