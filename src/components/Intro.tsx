@@ -1,4 +1,3 @@
-import Highlights from './Highlights'
 import Profile from './Profile'
 import ProfileIntro from './ProfileIntro'
 import React from 'react'
@@ -18,7 +17,6 @@ const Intro = (props: Props) => {
 					<ProfileIntro />
 				</div>
 			</div>
-					<Highlights />
 		</section>
 	);
 }

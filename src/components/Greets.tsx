@@ -16,7 +16,7 @@ const Greets = () => {
 	
 	
 	return (
-		<div className="relative group inline-block px-2 top-3 text-start">
+		<div className="relative group inline-block px-2 top-3 text-start ml-2 -mb-2">
 			<h2 className="text-3xl text-gray-200 font-bold animate-accordion-down border-3  hover:bg-[#45046A] underline decoration-emerald-50 mb-5 rounded-t-lg tracking-widest inline-block cursor-pointer select-none">
 				{greetingList[arrItem].text}
 				<span className="italic">!</span>
@@ -25,7 +25,7 @@ const Greets = () => {
 				<span className="relative z-[100] p-2 text-xs leading-none text-sh-white whitespace-no-wrap bg-slate-200 dark:bg-slate-600 shadow-lg rounded-md">
 					{greetingList[arrItem].lang}
 				</span>
-				<div className="w-3 h-3 -mt-2 rotate-45 bg-sh-dark"></div>
+				<div className="w-3 h-3 -mt-2 rotate-45 bg-yellow-500"></div>
 			</div>
 		</div>
 	);

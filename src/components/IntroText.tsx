@@ -6,10 +6,10 @@ type Props = {};
 
 const IntroText = (props: Props) => {
 	return (
-		<div className="p-2 rounded-lg shadow-xl text-gray-50 selection:bg-pink-500">
-			<p className="text-2xl font-bold text-gray-300 mb-3">
+		<div className="p-2 rounded-lg shadow-xl text-gray-50 selection:bg-pink-500 sm:m-2">
+			<p className="text-2xl w-full font-bold text-gray-300 mb-3">
 				I am <span className="text-indigo-600 hover:border-b-4 border-yellow-300 cursor-pointer">Arun Kumar</span> ,a skilled Full
-				Stack Web and Web3 Developer from India
+				Stack Web and Web3 Developer from India.
 			</p>
 			<div className="bg-gray-800 text-white p-4 rounded-lg selection:bg-pink-500">
 				<p className="text-gray-300 mb-4 flex items-center ">

@@ -28,10 +28,10 @@ export default function RootLayout({
 				disableTransitionOnChange
 			>
 				<body className={inter.className}>
-					<main className="lg:container w-full bg-popover-foreground dark:bg-[#020617] min-h-screen min-w-full ">
+					<main className="lg:container w-full sm:m-0 bg-popover-foreground dark:bg-[#020617] min-h-screen min-w-full bg-[#020617] ">
 						<MyNavbar />
 						{children}
-						<Footer/>
+						<Footer />
 					</main>
 				</body>
 			</ThemeProvider>
