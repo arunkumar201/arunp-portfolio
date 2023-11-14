@@ -4,10 +4,6 @@ import Link from "next/link";
 
 const RepoCard = ({ repos }: { repos: GitHubRepository[] }) => {
 
-	console.log(
-		"🚀 ~ file: RepoCard.tsx:7 ~ RepoCard ~ repos:",
-		repos[0].value.topics[0]
-);
 
 
 
