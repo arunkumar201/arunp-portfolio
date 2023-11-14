@@ -14,7 +14,10 @@ const FeaturedRepos = async () => {
 					 
 					  const response = await fetch(
 							`${GITHUB_API_URL}/repos/${GITHUB_USERNAME}/${repoName}`,
-							{
+						  {
+							  headers: {
+									"Accept":"application/vnd.github.mercy-preview+json",
+								},
 								next: {
 									revalidate: 259200,
 								},
@@ -36,14 +39,18 @@ const FeaturedRepos = async () => {
 		  
   return (
 		<section className="m-2">
-			<Button variant={"outline"} className="bg-gray-100 dark:bg-inherit">Featured Repositories</Button>
+			<p
+				className=" underline decoration-purple-500 decoration-2 bg-gray-100 dark:bg-inherit text-2xl"
+			>
+				Featured Repositories
+			</p>
 			<div className="space-y-4 mt-3">
 				<RepoCard repos={reposData as GitHubRepository[]} />
 			</div>
 			<div className="flex justify-center">
 				<Link href="/showcase">
 					<p className="gap-2 text-sh-blue hover:text-sh-blue-500 text-base mt-10 transition ease-in w-auto flex justify-center">
-						<p>More Repositories</p>
+						<p className="mb-2">More Repositories</p>
 						<MousePointerClick className="text-xl inline-block" />
 					</p>
 				</Link>

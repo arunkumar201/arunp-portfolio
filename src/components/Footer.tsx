@@ -4,9 +4,10 @@ import { socialMedia } from "@/data/socialMedia";
 
 const Footer = () => {
 	return (
-		<footer className="w-full md:w-[95%] md:container  relative mt-20 justify-center flex text-center  text-white bg-slate-700 ">
-				<Separator className="absolute mt-3 w-[95%] mb-2" />
-				<div className="flex md:flex-row flex-col items-center justify-between w-full p-4 md:gap-2 gap-8 h-12 absolute -bottom-20">
+		<footer className="w-full md:w-[95%] md:container flex justify-center text-center text-white">
+			<div className="flex flex-col w-full h-full">
+				<Separator className="mt-3 w-[100%] mb-2" />
+				<div className="flex flex-col md:flex-row justify-between items-center mb-2">
 					<p className="order-2 md:order-1">
 						© {new Date().getFullYear()} Arun Kumar
 					</p>
@@ -24,6 +25,7 @@ const Footer = () => {
 							</Link>
 						))}
 					</div>
+				</div>
 			</div>
 		</footer>
 	);

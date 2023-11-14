@@ -4,6 +4,12 @@ import Link from "next/link";
 
 const RepoCard = ({ repos }: { repos: GitHubRepository[] }) => {
 
+	console.log(
+		"🚀 ~ file: RepoCard.tsx:7 ~ RepoCard ~ repos:",
+		repos[0].value.topics[0]
+);
+
+
 
 	return (
 		<div className="grid grid-cols-1 md:grid-cols-2 gap-4 mt-3">
@@ -12,8 +18,9 @@ const RepoCard = ({ repos }: { repos: GitHubRepository[] }) => {
 					key={item.value?.id}
 					className="p-4 bg-sh-dark-500 border-2 border-sh-dark rounded-lg text-sh-white hover:shadow-lg transition-transform transform ease-in hover:scale-[1.02]"
 				>
-					<article className="flex flex-col justify-between h-[7.5rem]">
-						<header className="flex justify-between items-center mb-2">
+					<article className="flex flex-col justify-between h-full">
+						<header className="flex justify-between items-center mb-2 flex-wrap gap-2">
+							
 							<Link
 								href={item.value?.html_url ?? ""}
 								target="_blank"
@@ -41,16 +48,14 @@ const RepoCard = ({ repos }: { repos: GitHubRepository[] }) => {
 							</div>
 						</header>
 
-						<p className="text-sh-white-500 overflow-hidden h-12">
+						<p className="text-sh-white-500 overflow-hidden h-12 line-clamp-2">
 							{item.value?.description}
 						</p>
 
-						<p className="flex gap-2 mt-3 cursor-default">
-								{(item.value && item.value?.length>0)  && item.value?.topics
-									.slice(0, 3)
-									.map((topic: string, index: number) => (
+						<p className="flex gap-2 mt-3 cursor-default flex-wrap">
+								{item.value?.topics.map((topic: string, index: number) => (
 										<span
-											className="bg-gray-500 rounded-3xl px-2 text-sm overflow-hidden truncate"
+											className="bg-gray-500 rounded-3xl px-2 py-1 text-sm overflow-hidden truncate"
 											key={index}
 										>
 											{topic}

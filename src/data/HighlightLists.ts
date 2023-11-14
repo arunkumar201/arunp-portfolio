@@ -5,9 +5,9 @@ export const highlightList = [
 ];
 
 export const featuredRepositories = [
+	"LeetCode_1000_Problems",
 	"Food-app-Front-end ",
 	"Food-app-Backend ",
-	" LeetCode_1000_Problems",
 	"next-ai",
 	"file-upload-nextjs ",
 	"dark-light-theme-tailwindcss",

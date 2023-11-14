@@ -9,7 +9,7 @@ import { ThemeProvider } from "@/context/ThemeProvider";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-	title: `${process.env.PORTFOLIO_NAME|| ""} Portfolio`,
+	title: `${process.env.PORTFOLIO_NAME || ""} Portfolio`,
 	description:
 		"Craft a personalized portfolio website to showcase your skills, experiences, and projects. Share your appreciation by bestowing it with ⭐️.",
 };
@@ -23,14 +23,14 @@ export default function RootLayout({
 		<html lang="en" suppressHydrationWarning>
 			<ThemeProvider
 				attribute="class"
-				defaultTheme="system"
+				defaultTheme="dark"
 				enableSystem
 				disableTransitionOnChange
 			>
-				<body className={inter.className}>
-					<main className="lg:container w-full sm:m-0 bg-popover-foreground dark:bg-[#020617] min-h-screen min-w-full bg-[#020617] ">
+				<body className={`${inter.className} bg-[#020617]`}>
+					<main className="lg:container w-full sm:m-0 bg-popover-foreground dark:bg-[#020617]  min-w-full h-full bg-[#020617] ">
 						<MyNavbar />
-						{children}
+						<main className="p-3 w-full h-full bg-[#020617] mt-20 md:container">{children}</main>
 						<Footer />
 					</main>
 				</body>

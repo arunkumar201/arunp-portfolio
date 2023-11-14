@@ -1,3 +1,4 @@
+import Contact from '@/components/Contact';
 import FeaturedRepos from '@/components/Featured';
 import Highlights from '@/components/Highlights';
 import Intro from '@/components/Intro';
@@ -7,10 +8,12 @@ type Props = {}
 
 const page = (props: Props) => {
   return (
-		<main className="w-full lg:container relative top-20">
+		<main className="h-full">
 			<Intro />
 		  <Highlights />
-		  <FeaturedRepos/>
+		  <FeaturedRepos />
+		  <Contact/>
+		  
 		</main>
 	);
 }
