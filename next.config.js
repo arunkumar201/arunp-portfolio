@@ -1,12 +1,14 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
+	optimizeFonts: true,
+	compress: true,
+	swcMinify: true,
+	images: {
+		unoptimized: true,
+	},
 	typescript: {
 		ignoreBuildErrors: true,
-	},
-	eslint: {
-		ignoreBuildErrors: true,
-		ignoreDuringBuilds: true,
-	},
+	}
 };
 
 module.exports = nextConfig;

@@ -7,7 +7,6 @@ import { usePathname } from "next/navigation";
 const MenuList = ({ Menu }: { Menu: InavData[] }) => {
 	const path = usePathname();
 
-	console.debug("🚀 ~ file: MenuList.tsx:10 ~ MenuList ~ path:", path);
 
 	return (
 		<>

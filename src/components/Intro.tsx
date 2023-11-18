@@ -7,11 +7,13 @@ type Props = {}
 const Intro = (props: Props) => {
   return (
 		<section>
-			<div className="flex  lg:flex-row flex-col items-start justify-between">
-				{/*Profile Image section */}
+			<div className="flex flex-col items-start justify-between lg:flex-row">
+			  {/*Profile Image section */}
+			  
 				<div className="w-full md:w-[60%]">
-					<Profile />
+				  <Profile />
 				</div>
+		
 				{/* Profile Introduction section */}
 				<div className="w-full">
 					<ProfileIntro />

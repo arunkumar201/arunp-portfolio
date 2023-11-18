@@ -2,6 +2,7 @@ import "./globals.css";
 
 import Footer from "@/components/Footer";
 import { Inter } from "next/font/google";
+import Meta from "@/Meta";
 import type { Metadata } from "next";
 import MyNavbar from "@/components/Navbar";
 import { ThemeProvider } from "@/context/ThemeProvider";
@@ -29,8 +30,11 @@ export default function RootLayout({
 			>
 				<body className={`${inter.className} bg-[#020617]`}>
 					<main className="lg:container w-full sm:m-0 bg-popover-foreground dark:bg-[#020617]  min-w-full h-full bg-[#020617] ">
+						<Meta />
 						<MyNavbar />
-						<main className="p-3 w-full h-full bg-[#020617] mt-20 md:container">{children}</main>
+						<main className="p-3 w-full h-full bg-[#020617] mt-20 md:container">
+							{children}
+						</main>
 						<Footer />
 					</main>
 				</body>
