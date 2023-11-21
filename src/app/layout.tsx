@@ -1,14 +1,18 @@
 import "./globals.css";
 
 import Footer from "@/components/Footer";
-import { Inter } from "next/font/google";
 import Meta from "@/Meta";
 import type { Metadata } from "next";
 import MyNavbar from "@/components/Navbar";
+import { Poppins } from "next/font/google";
 import { ThemeProvider } from "@/context/ThemeProvider";
+import { cn } from "@/lib/utils";
 
-const inter = Inter({ subsets: ["latin"] });
 
+const poppins = Poppins({
+	weight: ["400", "500", "600", "700"],
+	subsets: ["latin"],
+});
 export const metadata: Metadata = {
 	title: `${process.env.PORTFOLIO_NAME || ""} Portfolio`,
 	description:
@@ -21,14 +25,22 @@ export default function RootLayout({
 	children: React.ReactNode;
 }) {
 	return (
-		<html lang="en" suppressHydrationWarning>
+		<html lang="en" suppressHydrationWarning className="overflow-y-scroll dark">
+			<head>
+				<meta
+					name="viewport"
+					content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0"
+				/>
+			</head>
 			<ThemeProvider
 				attribute="class"
 				defaultTheme="dark"
 				enableSystem
 				disableTransitionOnChange
 			>
-				<body className={`${inter.className} bg-[#020617]`}>
+				<body
+					className={cn("bg-[#020617", poppins.className)}
+				>
 					<main className="lg:container w-full sm:m-0 bg-popover-foreground dark:bg-[#020617]  min-w-full h-full bg-[#020617] ">
 						<Meta />
 						<MyNavbar />
