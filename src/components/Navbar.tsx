@@ -34,7 +34,7 @@ const MyNavbar = () => {
 					/>
 					<NavbarBrand>
 						<div className="flex items-center gap-2">
-							<Link href={GITHUB_URL} target="_blank">
+							<Link href={GITHUB_URL} target="_blank" aria-label={"GITHUB"}>
 								<Image
 									src={GithubLogo}
 									width={40}

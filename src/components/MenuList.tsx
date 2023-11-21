@@ -17,13 +17,15 @@ const MenuList = ({ Menu }: { Menu: InavData[] }) => {
 							path === item.path
 								? "text-primary underline-offset-4 underline decoration-yellow-200 decoration-2"
 								: ""
-						}`}
+							}`}
+						role="button"
 						size={"lg"}
 						variant={"link"}
 					>
 						<Link
 							href={item.path}
-							className="text-popover-foreground text-lg tracking-tight hover:text-secondary-foreground"
+							aria-label={item.label}
+							className="text-lg tracking-tight text-popover-foreground hover:text-secondary-foreground"
 						>
 							{item.label}
 						</Link>

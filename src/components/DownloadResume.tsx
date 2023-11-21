@@ -8,21 +8,20 @@ function DownloadResume() {
 
 
 	return (
-		<div className="relative inline-block text-left mt-6 mb-3">
+		<div className="relative inline-block mt-6 mb-3 text-left">
 			<Link
 				href={ResumePath}
-				role="resume"
+				role="link"
 				target="_blank"
+				aria-label="Resume"
 				rel="noopener noreferrer"
 			>
 				<Button
 					variant="secondary"
-					className="flex justify-center items-end rounded-md  px-4 py-2 text-sm dark:bg-gray-700 dark:text-gray-100 "
+					className="flex items-end justify-center px-4 py-2 text-sm rounded-md dark:bg-gray-700 dark:text-gray-100 "
 				>
-					<span>
-					Resume
-					</span>
-					<DownloadIcon className="inline-block text-base ml-2" size={18} />
+					<span>Resume</span>
+					<DownloadIcon className="inline-block ml-2 text-base" size={18} />
 				</Button>
 			</Link>
 		</div>
