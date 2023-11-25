@@ -8,7 +8,9 @@ export const metadata: Metadata = {
 };
 const page = (props: Props) => {
   return (
-	<div>page</div>
+	  <div>page
+		  Hello 
+	</div>
   )
 }
 

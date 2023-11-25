@@ -7,35 +7,36 @@ type Props = {};
 const IntroText = (props: Props) => {
 	return (
 		<div className="p-2 rounded-lg shadow-xl text-gray-50 selection:bg-pink-500 sm:m-2">
-			<p className="text-2xl w-full font-bold text-gray-300 mb-3">
-				I am <span className="text-indigo-600 hover:border-b-4 border-yellow-300 cursor-pointer">Arun Kumar</span> ,a skilled Full
-				Stack Web and Web3 Developer from India.
+			<p className="w-full mb-3 text-2xl font-bold text-gray-300">
+				I am{" "}
+				<span className="text-indigo-600 border-yellow-300 cursor-pointer hover:border-b-4">
+					Arun Kumar
+				</span>{" "}
+				,a skilled Full Stack Web and Web3 Developer from India.
 			</p>
-			<div className="bg-gray-800 text-white p-4 rounded-lg selection:bg-pink-500">
-				<p className="text-gray-300 mb-4 flex items-center ">
+			<div className="p-4 text-white bg-gray-800 rounded-lg selection:bg-pink-500">
+				<p className="flex flex-row items-center justify-between leading-7 text-gray-300">
+					<Globe2Icon
+						className="relative flex self-start mr-2 text-lg text-indigo-500"
+						size={24}
+					/>
+					<span className="-mt-1 text-base font-medium leading-8 tracking-wide">
+						I am passionate about building excellent software that improves the
+						lives of those around me.
+					</span>
+				</p>
+				<p className="flex items-center text-gray-300 ">
 					<Code2Icon
-						className="inline-block mr-2 text-indigo-500 self-start "
+						className="self-start inline-block mr-2 text-lg text-indigo-500"
 						size={44}
 					/>{" "}
-					<span className="scroll-m-20 text-base font-semibold tracking-tight leading-7 self-start mt-2">
+					<span className="self-start mt-1 mb-3 text-base font-medium leading-8 tracking-tight scroll-m-20">
 						My professional journey is deeply rooted in a commitment to full
 						stack technologies, and my dedication extends to collaborating on
 						open-source projects.
 					</span>
 				</p>
-				<p className="text-gray-300 flex items-center">
-					<Globe2Icon
-						className="inline-block mr-2 text-indigo-500 self-start text-lg"
-						size={44}
-					/>
-					<span className="scroll-m-20 text-base leading-7 font-semibold tracking-tight mt-2">
-						My unwavering passion lies in crafting exceptional software
-						solutions that positively impact the lives around me. With a wealth
-						of experience and expertise in my arsenal, I am poised to deliver
-						excellence in the realm of Full Stack & Web3 development.
-					</span>
-				</p>
-				<p className="text-gray-300 flex items-center ">
+				<p className="flex items-center text-gray-300 ">
 					<DownloadResume />
 				</p>
 			</div>

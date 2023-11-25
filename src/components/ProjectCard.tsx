@@ -28,7 +28,7 @@ const ProjectCard = ({ projectData }: { projectData: IProject }) => {
 
 						<div
 							className={
-								"md:text-left text-xs md:text-base   p-4 border-2 border-gray-300 rounded-lg w-72 md:w-[32rem] flex md:ml-0 ml-6"
+								"md:text-left text-lg md:text-base w-fit   p-4 border-2 border-gray-300 rounded-lg md:w-[32rem] flex md:ml-0 ml-6"
 							}
 						>
 							{des}

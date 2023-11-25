@@ -3,8 +3,6 @@
 import { PORTFOLIO_IMAGE, PORTFOLIO_NAME } from "@/constants";
 
 import Image from "next/image";
-import ImagesSeleton from "./Image-skeleton";
-import Link from "next/link";
 import React from "react";
 
 type Props = {};

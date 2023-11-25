@@ -8,10 +8,10 @@ type Props = {}
 
 const page = (props: Props) => {
   return (
-    <>
-    <Contact/>
-    </>
-  )
+		<div className="">
+			<Contact />
+		</div>
+	);
 }
 
 export default page

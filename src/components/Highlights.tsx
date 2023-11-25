@@ -8,7 +8,7 @@ const HighlightPoint = dynamic(() => import("@/utils/HighlightPoint"), {
 const Highlights = () => {
 	return (
 		<section className="p-4 bg-gray-200 dark:bg-gray-800 shadow border-l-4 border-x-[#1A85FF] rounded-sm dark:text-gray-50 text-gray-700 m-2">
-			<h2 className="inline-block mb-3 text-lg font-bold">
+			<h2 className="inline-block mb-3 text-lg font-bold leading-8 tracking-wide">
 				New year, New goals:
 			</h2>
 			<ul>
