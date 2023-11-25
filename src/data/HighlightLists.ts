@@ -12,3 +12,15 @@ export const featuredRepositories = [
 	"file-upload-nextjs ",
 	"dark-light-theme-tailwindcss",
 ];
+
+export const AllFeaturedRepositories = [
+	...featuredRepositories,
+	"metamask-js",
+	"rest-api-using-ts",
+	"nodejs-express-bull ",
+	"redis-example",
+	"react-multi-lang-app",
+	"dark-light-theme-tailwindcss",
+	"custom-hooks",
+	"Github-Profile-Generator ",
+];

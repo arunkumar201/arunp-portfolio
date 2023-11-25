@@ -3,7 +3,7 @@ import { ExternalLink, GitMerge, Star } from "lucide-react";
 import Link from "next/link";
 
 const RepoCard = ({ repos }: { repos: GitHubRepository[] }) => {
-
+console.log(repos[1]);
 
 
 
