@@ -54,11 +54,11 @@ const MyNavbar = () => {
 				<NavbarContent className="hidden gap-4 sm:flex" justify="center">
 					<MenuList Menu={Menu} />
 				</NavbarContent>
-				<NavbarContent justify="end">
+				{/* <NavbarContent justify="end">
 					<NavbarItem>
 						<ThemeToggle />
 					</NavbarItem>
-				</NavbarContent>
+				</NavbarContent> */}
 				<NavbarMenu>
 					<MenuList Menu={Menu} />
 				</NavbarMenu>
