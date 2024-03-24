@@ -55,9 +55,9 @@ const MyNavbar = () => {
 					<MenuList Menu={Menu} />
 				</NavbarContent>
 				<NavbarContent justify="end">
-					<NavbarItem>
+					{/* <NavbarItem>
 						<ThemeToggle />
-					</NavbarItem>
+					</NavbarItem> */}
 				</NavbarContent>
 				<NavbarMenu>
 					<MenuList Menu={Menu} />
