@@ -8,7 +8,6 @@ import { Poppins } from "next/font/google";
 import { ThemeProvider } from "@/context/ThemeProvider";
 import { cn } from "@/lib/utils";
 
-
 const poppins = Poppins({
 	weight: ["400", "500", "600", "700"],
 	subsets: ["latin"],
@@ -34,13 +33,11 @@ export default function RootLayout({
 			</head>
 			<ThemeProvider
 				attribute="class"
-				defaultTheme="dark"
-				enableSystem
+				forcedTheme="dark"
+				enableSystem={false}
 				disableTransitionOnChange
 			>
-				<body
-					className={cn("bg-[#020617", poppins.className)}
-				>
+				<body className={cn("bg-[#020617", poppins.className)}>
 					<main className="lg:container w-full sm:m-0 bg-popover-foreground dark:bg-[#020617]  min-w-full h-full bg-[#020617] ">
 						<Meta />
 						<MyNavbar />

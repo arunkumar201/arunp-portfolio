@@ -16,7 +16,8 @@ const Intro = (props: Props) => {
 		
 				{/* Profile Introduction section */}
 				<div className="w-full">
-					<ProfileIntro />
+				  <ProfileIntro />
+				  
 				</div>
 			</div>
 		</section>
