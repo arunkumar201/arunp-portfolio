@@ -5,7 +5,6 @@ import Meta from "@/Meta";
 import type { Metadata } from "next";
 import MyNavbar from "@/components/Navbar";
 import { Poppins } from "next/font/google";
-import { ThemeProvider } from "@/context/ThemeProvider";
 import { cn } from "@/lib/utils";
 
 const poppins = Poppins({
@@ -31,12 +30,7 @@ export default function RootLayout({
 					content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0"
 				/>
 			</head>
-			<ThemeProvider
-				attribute="class"
-				forcedTheme="dark"
-				enableSystem={false}
-				disableTransitionOnChange
-			>
+
 				<body className={cn("bg-[#020617", poppins.className)}>
 					<main className="lg:container w-full sm:m-0 bg-popover-foreground dark:bg-[#020617]  min-w-full h-full bg-[#020617] ">
 						<Meta />
@@ -46,8 +40,7 @@ export default function RootLayout({
 						</main>
 						<Footer />
 					</main>
-				</body>
-			</ThemeProvider>
+			</body>
 		</html>
 	);
 }

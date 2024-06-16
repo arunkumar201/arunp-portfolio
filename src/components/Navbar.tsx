@@ -6,7 +6,6 @@ import {
 	Navbar,
 	NavbarBrand,
 	NavbarContent,
-	NavbarItem,
 	NavbarMenu,
 	NavbarMenuToggle,
 } from "@nextui-org/react";
@@ -55,9 +54,6 @@ const MyNavbar = () => {
 					<MenuList Menu={Menu} />
 				</NavbarContent>
 				<NavbarContent justify="end">
-					{/* <NavbarItem>
-						<ThemeToggle />
-					</NavbarItem> */}
 				</NavbarContent>
 				<NavbarMenu>
 					<MenuList Menu={Menu} />
